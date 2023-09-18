@@ -16,7 +16,7 @@
         <img src="image 1.svg" class="imagemHeader">
       </div>
     </header>
-    <div id="html" class="card1"></div>
+    <div id="html"></div>
  
     <a-scene mindar-image="imageTargetSrc: /imagem/targets (2).mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
@@ -41,8 +41,8 @@
 const target = document.querySelectorAll(".target");
 var element = document.getElementById("html")
 target[0].addEventListener("targetFound", event => {
-element.innerHTML = "<div>Este é meu texto HTML</div>";
-  
+element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
+
 })
 // Criar um novo elemento HTML
 </script>
