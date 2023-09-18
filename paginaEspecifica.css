@@ -15,3 +15,7 @@ body{
 a-scene{
     height: 90%;
 }
+#imagemHeader{
+    height:80%; 
+    width: 80%;
+}
