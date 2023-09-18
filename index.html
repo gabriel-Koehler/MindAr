@@ -37,11 +37,9 @@
 <script>
 
 const target = document.querySelectorAll(".target");
-
+var element = document.getElementById("html")
 target[0].addEventListener("targetFound", event => {
-  alert("Deu bom")
-  var element = document.getElementById("html")
-element.innerHTML = "<h1>Este é meu texto HTML</h1><p>Este é um parágrafo no meu texto HTML.</p>";
+element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
   
 })
 // Criar um novo elemento HTML
