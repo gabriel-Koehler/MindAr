@@ -40,10 +40,9 @@ const target = document.querySelectorAll(".target");
 
 target[0].addEventListener("targetFound", event => {
   alert("Deu bom")
-  
+  var element = document.getElementById("html")
+element.innerHTML = "<h1>Este é meu texto HTML</h1><p>Este é um parágrafo no meu texto HTML.</p>";
   
 })
 // Criar um novo elemento HTML
-var element = document.getElementById("html")
-element.innerHTML = "<h1>Este é meu texto HTML</h1><p>Este é um parágrafo no meu texto HTML.</p>";
 </script>
