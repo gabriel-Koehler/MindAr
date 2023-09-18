@@ -15,11 +15,11 @@ body{
 a-scene{
     height: 90%;
 }
-#imagemHeader{
+.imagemHeader{
     height:80%; 
     width: 80%;
 }
-#divHeader{
+.divHeader{
     display: flex; 
     align-items: center; 
     justify-content: center;
