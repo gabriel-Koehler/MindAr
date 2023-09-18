@@ -19,3 +19,8 @@ a-scene{
     height:80%; 
     width: 80%;
 }
+#divHeader{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
