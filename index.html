@@ -42,7 +42,7 @@ const target = document.querySelectorAll(".target");
 var element = document.getElementById("html")
 target[0].addEventListener("targetFound", event => {
 element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
-  localStorage.setItem("target",JSON.stringify(target[0]));
+  localStorage.setItem("target",target[0]);
   window.location.href = '/paginaEspecifica.html'
 })
 // Criar um novo elemento HTML
