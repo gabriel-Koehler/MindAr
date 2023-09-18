@@ -38,9 +38,40 @@
 const target = document.querySelectorAll(".target");
 
 target[0].addEventListener("targetFound", event => {
-  alert(target);
+  alert("Deu bom")
+  alert(html);
+  mindAR.addContent({
+  type: "html",
+  data: html,
+});
 })
+// Importar o MindAR
+const MindAR = require("mindar");
 
+// Criar um novo arquivo de mindAR
+const mindAR = new MindAR();
+
+// Criar um novo texto HTML
+const html = `
+<html>
+<head>
+  <title>Meu texto HTML</title>
+</head>
+<body>
+  <h1>Este é meu texto HTML</h1>
+  <p>Este é um parágrafo no meu texto HTML.</p>
+</body>
+</html>
+`;
+
+// Adicionar o texto HTML ao arquivo de mindAR
+mindAR.addContent({
+  type: "html",
+  data: html,
+});
+
+// Salvar o arquivo de mindAR
+mindAR.save("arquivo.mind");
 
 
 </script>
