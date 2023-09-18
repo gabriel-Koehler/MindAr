@@ -1,6 +1,7 @@
 header{
     width: screen;
     height: 10%;
+    width: 100%;
     background-color: #448DCA;
     margin: 0;
     padding: 0;
@@ -16,8 +17,7 @@ a-scene{
     height: 90%;
 }
 .imagemHeader{
-    height:80%; 
-    width: 80%;
+    
 }
 .divHeader{
     display: flex; 
