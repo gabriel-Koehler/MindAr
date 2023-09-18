@@ -40,10 +40,8 @@ const target = document.querySelectorAll(".target");
 target[0].addEventListener("targetFound", event => {
   alert("Deu bom")
   alert(html);
-  mindAR.addContent({
-  type: "html",
-  data: html,
-});
+  MindAR.showContent("html");
+  
 })
 // Importar o MindAR
 const MindAR = require("mindar");
