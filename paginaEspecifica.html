@@ -38,7 +38,7 @@
                       <div class="carousel-item active">
                         <img style="height: 40vh; width: 60vw;" src="https://ciclovivo.com.br/wp-content/uploads/2015/009/img/noticias/1-6347107844_41937abd3a_z(1).jpg" alt="Primeiro Slide" style="height: 50vh;">
                       <div class="carousel-item" style="height: 50vh;">
-                        <img style="height: 40vh; width: 60vw;" alt="Segundo Slide" style="height: 50vh;">
+                        <div id="html"></div>
                       </div>
                       <div class="carousel-item" style="height: 50vh;">
                         <img style="height: 40vh; width: 60vw;" alt="Terceiro Slide" style="height: 50vh;">
@@ -59,9 +59,11 @@
     </html>
 
     <script>
+      var element = document.getElementById("html")
     const target= localStorage.getItem("target")
-
-    alert(target);
     
-
+    alert(target);
+    if(target==0){
+    element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
+    }
     </script>
