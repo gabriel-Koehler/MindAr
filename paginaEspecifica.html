@@ -22,8 +22,8 @@
             justify-content: space-between;"
             >
             
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <img src="camera 1.svg"  style="height:80%; width: 80%;" onclick="voltaPraPaginaInicial()">
+                <div style="display: flex; align-items: center; justify-content: center;" onclick="voltaPraPaginaInicial()">
+                    <img src="camera 1.svg"  style="height:80%; width: 80%;" >
                   </div>
                   <div style="display: flex; align-items: center; justify-content: center;">
                     <img src="image 1.svg" style="height:80%; width: 80%;">
@@ -49,7 +49,8 @@
     if(target==0){
     element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
     }
-    voltaPraPaginaInicial(){
+    function voltaPraPaginaInicial(){
         window.location.href = "/index.html" 
+        alert("foi")
     }
     </script>
