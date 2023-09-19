@@ -70,15 +70,17 @@
     </html>
 
     <script>
-      var element = document.getElementById("html")
+    const variavel="";
+    var element = document.getElementById(variavel)
     const target= localStorage.getItem("target")
-    element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
     alert(target);
 
     if(target==0){
-    element.innerHTML ="<div> </div>"
+    variavel = "card1"
+    element.innerHTML ="<div class='card1'> CARD 1</div>"
     }
     if(target==1){
+    variavel = "card2"
     element.innerHTML = "<div class='card1'>Este é meu texto 2 HTML</div>";
     }
     if(target==2){

@@ -86,7 +86,7 @@
 const target = document.querySelectorAll(".target");
 
 for (let i = 0; i <= 49; i++) {
-  const targetElement = document.querySelector(`.target[targetIndex="${i}"]`);
+  const targetElement = target[i]
   
   if (targetElement) {
     targetElement.addEventListener("targetFound", event => {
