@@ -38,7 +38,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item" style="height: 400px1; width: 800px;">
+                  <div class="carousel-item" style="height: 400px; width: 800px;">
                     <div id="card2">
                       <div class="carousel-caption d-none d-md-block">
                       </div>
@@ -70,17 +70,19 @@
     </html>
 
     <script>
-    const variavel="";
-    var element = document.getElementById(variavel)
+
+    var element1 = document.getElementById("card1")
+    var element2 = document.getElementById("card2")
+    var element3 = document.getElementById("card3")
     const target= localStorage.getItem("target")
     alert(target);
 
     if(target==0){
-    variavel = "card1"
-    element.innerHTML ="<div class='card1'> CARD 1</div>"
+    element1.innerHTML ="<div class='card1'> Slide 1</div>"
+    element2.innerHTML ="<div class='card1'> Slide 2</div>"
+    element3.innerHTML ="<div class='card1'> Slide 3</div>"
     }
     if(target==1){
-    variavel = "card2"
     element.innerHTML = "<div class='card1'>Este é meu texto 2 HTML</div>";
     }
     if(target==2){
