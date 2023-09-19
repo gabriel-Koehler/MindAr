@@ -21,17 +21,34 @@
             flex-direction: row-reverse;
             justify-content: space-between;"
             >
-            
                 <div style="display: flex; align-items: center; justify-content: center;" onclick="voltaPraPaginaInicial()">
-                    <img src="camera 1.svg"  style="height:80%; width: 80%;" >
+                    <img src="camera 1.svg"  style="height:80%; width: 80%;">
                   </div>
                   <div style="display: flex; align-items: center; justify-content: center;">
                     <img src="image 1.svg" style="height:80%; width: 80%;">
                   </div>
             </header>
-            <div id="html"></div> 
             <main style="display: flex; justify-content: center; align-items: center; height: 90%;">
-            
+              <a style="height: 90%;" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+                <div style="height: 50vh;" id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+                    <div class="carousel-inner" style="height: 50vh;">
+                      <div class="carousel-item active">
+                        <img style="height: 40vh; width: 60vw;" src="https://ciclovivo.com.br/wp-content/uploads/2015/009/img/noticias/1-6347107844_41937abd3a_z(1).jpg" alt="Primeiro Slide" style="height: 50vh;">
+                      <div class="carousel-item" style="height: 50vh;">
+                        <img style="height: 40vh; width: 60vw;" alt="Segundo Slide" style="height: 50vh;">
+                      </div>
+                      <div class="carousel-item" style="height: 50vh;">
+                        <img style="height: 40vh; width: 60vw;" alt="Terceiro Slide" style="height: 50vh;">
+                      </div>
+                    </div>
+                  </div>
+                  <a style="height: 90%;" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
             </main>
 
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -46,11 +63,12 @@
     const target= localStorage.getItem("target")
     
     alert(target);
+
     if(target==0){
     element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
     }
+
     function voltaPraPaginaInicial(){
         window.location.href = "/index.html" 
-        alert("foi")
     }
     </script>

@@ -24,13 +24,3 @@ a-scene{
     align-items: center; 
     justify-content: center;
 }
-.card1{
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
