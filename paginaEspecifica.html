@@ -25,30 +25,45 @@
                     <img src="camera 1.svg"  style="height:80%; width: 80%;">
                   </div>
                   <div style="display: flex; align-items: center; justify-content: center;">
-                    <img src="image 1.svg" style="height:80%; width: 80%;">
+                    <img src="image 1.svg" style="height:80%; width: 80%; filter: invert(1);">
                   </div>
             </header>
             <main style="display: flex; justify-content: center; align-items: center; height: 90%;">
-              <a style="height: 90%;" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-              </a>
-                <div style="height: 50vh;" id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
-                    <div class="carousel-inner" style="height: 50vh;">
-                      <div class="carousel-item active">
-                        <div id="html"></div>
-                      <div class="carousel-item" style="height: 50vh;">
-                        <img style="height: 40vh; width: 60vw;" alt="Segundo Slide" style="height: 50vh;">
-                      </div>
-                      <div class="carousel-item" style="height: 50vh;">
-                        <img style="height: 40vh; width: 60vw;" alt="Terceiro Slide" style="height: 50vh;">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+                <div class="carousel-inner" style="height: 400px; width: 800px;">
+                  <div class="carousel-item active" style="height: 400px; width: 800px;">
+                    <div id="html">
+                      
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
                       </div>
                     </div>
                   </div>
-                  <a style="height: 90%;" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                  </a>
+                  <div class="carousel-item" style="height: 400px1; width: 800px;">
+                    <img style="height: 400px; width: 800px;" class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk0gsP7jH1BttBdJ1a4Hca8OwxxaTfX6Ncow&usqp=CAU" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Foda2</h5>
+                      <p>Foda3 davi bem bixa</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 400px; width: 800px;">
+                    <img style="height: 400px; width: 800px;" class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNSbmP_kUMl9xuUFPnF5bgbszZpmYACWvyxawNl9CW_wlMLyRuCAxjMNoX5bIACv1RFds&usqp=CAU" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Foda3</h5>
+                      <p>Foda3 davi bem bixa</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
             </main>
 
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -61,13 +76,21 @@
     <script>
       var element = document.getElementById("html")
     const target= localStorage.getItem("target")
-    
+    element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
     alert(target);
 
     if(target==0){
-    element.innerHTML = "<div class='card1'>Este é meu texto HTML</div>";
+    
     }
-
+    if(target==1){
+    element.innerHTML = "<div class='card1'>Este é meu texto 2 HTML</div>";
+    }
+    if(target==2){
+    element.innerHTML = "<div class='card1'>Este é meu texto 3 HTML</div>";
+    }
+    if(target==3){
+    element.innerHTML = "<div class='card1'>Este é meu texto 4 HTML</div>";
+    }
     function voltaPraPaginaInicial(){
         window.location.href = "/index.html" 
     }
