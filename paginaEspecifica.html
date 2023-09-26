@@ -102,11 +102,14 @@
     alert(target);
 
     if(target==0){
-    element1.innerHTML ="<img style='width: 40vw; height:30vh; border-top-left-radius: 15px; border-bottom-left-radius:15px;' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
-                       "<div style='width: 40vw; height:30vh;background-color: rgb(212, 212, 212); padding-left: 2vh; padding-top: 2vw;border-top-right-radius: 15px; border-bottom-right-radius:15px;'>"+
+    element1.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
+                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
+                        "<div id='divLadoDoCard'>"+
                           "<h1>Bobinadeira eletrica </h1>"+
-                          "<p style='word-break: break-word; width:35vw;'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"
+                          "<p id='pDoCard'>"+
+                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
+                        "</div>"+
+                      "</div>"
     
     }
     if(target==1){
