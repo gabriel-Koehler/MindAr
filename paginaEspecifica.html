@@ -5,11 +5,26 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <title> Pagina Especifica </title>
+            <style>
+              #tamanhoDoCard{
+                height: 60vh;
+                width: 80vw; 
+              }
+              #imagemCard{
+                width: 40vw; height:30vh; border-top-left-radius: 15px; border-bottom-left-radius:15px;
+              }
+              #divLadoDoCard{
+                width: 40vw; height:30vh;background-color: rgb(212, 212, 212); padding-left: 2vh; padding-top: 2vw;border-top-right-radius: 15px; border-bottom-right-radius:15px;
+              }
+              #pDoCard{
+                word-break: break-word; width:35vw;
+              }
+            </style>
             <link rel="stylesheet" type="text/css" href="paginaEspecifica.css" media="screen"/>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
         </head>
 
-        <body style="height: 100vh; width: 100vw;  background-color: black;">
+        <body style="height: 100vh; width: 100vw;  background-color: rgb(175, 175, 175);">
             <header 
             style="width: screen;
             height: 10%;
@@ -30,26 +45,35 @@
             </header>
             <main style="display: flex; justify-content: center; align-items: center; height: 90%;">
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
-                <div class="carousel-inner" style="height: 400px; width: 800px;">
-                  <div class="carousel-item active" style="height: 400px; width: 800px;">
+                <div class="carousel-inner tamanhoDoCard" >
+                  <div class="carousel-item active tamanhoDoCard">
                     <div id="card1">
-                      
-                      <div class="carousel-caption d-none d-md-block">
+                      <div id="tamanhoDoCard" style="display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;">
+                        <img id="imagemCard" src="be53fc5350400539c44b3bc7c2552fe9.gif">
+                        <div id="divLadoDoCard">
+                          <h1>Bobinadeira eletrica </h1>
+                          <p id="pDoCard">
+                            Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo
+                          </p>
+                          <!-- <div style="width: 100%;height: 5vh; display: flex;justify-content: center;">
+                            <button style="height: 5vh; width: 25vw; border: 1px solid black; border-radius: 5px;"></button>
+                          </div> -->
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item" style="height: 400px; width: 800px;">
+                  <!-- <div class="carousel-item" style="height: 100%; width: 100%;">
                     <div id="card2">
                       <div class="carousel-caption d-none d-md-block">
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-item" style="height: 400px; width: 800px;">
+                  </div>  
+                  <div class="carousel-item" style="height: 100%; width: 100%;">
                     <div id="card3">
                       <div class="carousel-caption d-none d-md-block">
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,9 +102,12 @@
     alert(target);
 
     if(target==0){
-    element1.innerHTML ="<div class='card1'> Slide 1</div>"
-    element2.innerHTML ="<div class='card1'> Slide 2</div>"
-    element3.innerHTML ="<div class='card1'> Slide 3</div>"
+    element1.innerHTML ="<img style='width: 40vw; height:30vh; border-top-left-radius: 15px; border-bottom-left-radius:15px;' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+                       "<div style='width: 40vw; height:30vh;background-color: rgb(212, 212, 212); padding-left: 2vh; padding-top: 2vw;border-top-right-radius: 15px; border-bottom-right-radius:15px;'>"+
+                          "<h1>Bobinadeira eletrica </h1>"+
+                          "<p style='word-break: break-word; width:35vw;'>"+
+                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"
+    
     }
     if(target==1){
     element.innerHTML = "<div class='card1'>Este é meu texto 2 HTML</div>";
