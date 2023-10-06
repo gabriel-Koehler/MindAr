@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-    <html style="height:screen; width: screen;">
+<html style="height:screen; width: screen;">
 
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title> Pagina Especifica </title>
-            <style>
-              #tamanhoDoCard{
-                height: 60vh;
-                width: 80vw; 
-              }
-              #imagemCard{
-                width: 40vw; height:30vh; border-top-left-radius: 15px; border-bottom-left-radius:15px;
-              }
-              #divLadoDoCard{
-                width: 40vw; height:30vh;background-color: rgb(212, 212, 212); padding-left: 2vh; padding-top: 2vw;border-top-right-radius: 15px; border-bottom-right-radius:15px;
-              }
-              #pDoCard{
-                word-break: break-word; width:35vw;
-              }
-            </style>
-            <link rel="stylesheet" type="text/css" href="paginaEspecifica.css" media="screen"/>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
-        </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Pagina Especifica </title>
+  <style>
+    #tamanhoDoCard {
+      height: 60vh;
+      width: 80vw;
+    }
 
-        <body style="height: 100vh; width: 100vw;  background-color: rgb(175, 175, 175);">
-            <header 
-            style="width: screen;
+    #imagemCard {
+      width: 40vw;
+      height: 30vh;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    #divLadoDoCard {
+      width: 40vw;
+      height: 30vh;
+      background-color: rgb(212, 212, 212);
+      padding-left: 2vh;
+      padding-top: 2vw;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    #pDoCard {
+      word-break: break-word;
+      width: 35vw;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="paginaEspecifica.css" media="screen" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body style="height: 100vh; width: 100vw;  background-color: rgb(175, 175, 175);">
+  <header style="width: screen;
             height: 10%;
             background-color: #448DCA;
             margin: 0;
@@ -34,234 +47,298 @@
             box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-between;"
-            >
-                <div style="display: flex; align-items: center; justify-content: center;" onclick="voltaPraPaginaInicial()">
-                    <img src="camera 1.svg"  style="height:80%; width: 80%;">
-                  </div>
-                  <div style="display: flex; align-items: center; justify-content: center;">
-                    <img src="image 1.svg" style="height:80%; width: 80%; ">
-                  </div>
-            </header>
-            <main style="display: flex; justify-content: center; align-items: center; height: 90%;">
-              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
-                <div class="carousel-inner tamanhoDoCard" >
-                  <div class="carousel-item active tamanhoDoCard">
-                    <div id="card1">
-                      <div class="carousel-caption d-none d-md-block">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item" style="height: 100%; width: 100%;">
-                    <div id="card2">
-                      <div class="carousel-caption d-none d-md-block">
-                      </div>
-                    </div>
-                  </div>  
-                  <div class="carousel-item" style="height: 100%; width: 100%;">
-                    <div id="card3">
-                      <div class="carousel-caption d-none d-md-block">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Próximo</span>
-                </a>
-              </div>
-            </main>
+            justify-content: space-between;">
+    <div style="display: flex; align-items: center; justify-content: center;" onclick="voltaPraPaginaInicial()">
+      <img src="camera 1.svg" style="height:80%; width: 80%;">
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <img src="image 1.svg" style="height:80%; width: 80%; ">
+    </div>
+  </header>
+  <main style="display: flex; justify-content: center; align-items: center; height: 90%;">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner tamanhoDoCard">
+        <div class="carousel-item active tamanhoDoCard">
+          <div id="card1">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 100%; width: 100%;">
+          <div id="card2">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="height: 100%; width: 100%;">
+          <div id="card3">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </main>
 
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+<img src="./Fotos Pratica Final/Fotos Pratica Final/">
 
-    </html>
+</html>
 
-    <script>
+<script>
 
-    var element1 = document.getElementById("card1")
-    var element2 = document.getElementById("card2")
-    var element3 = document.getElementById("card3")
-    const target= localStorage.getItem("target")
-    alert(target);
+  var element1 = document.getElementById("card1")
+  var element2 = document.getElementById("card2")
+  var element3 = document.getElementById("card3")
+  const target = localStorage.getItem("target")
+  alert(target);
 
-    if(target==0|| target==39 || target){
-    element1.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>"
-                      // colocar mais textos nos cards ao lado,
-                      // talvez arrumar imagem no card
-    
-    }
-    if(target==1 || target== 8 || target== 11 || target== 17 || target== 23 || target== 25 || target== 31 || target== 40){
-      //Imagem forma
-      element1.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='/Fotos Pratica Final/Fotos Pratica Final/imagem-forma/8.jpg'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Forma</h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>";
-                      element2.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>";
-                      element3.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>"
+  if (target == 0 || target == 39 || target) {
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>"
+    // colocar mais textos nos cards ao lado,
+    // talvez arrumar imagem no card
 
-    }
-    if(target==33 || target== 32 || target== 24){
-      //Desbobinador de carretel
-      element1.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='/Fotos Pratica Final/Fotos Pratica Final/desbobinador-carretel/24.jpg'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Forma</h1>"+
-                          "<p id='pDoCard'>"+
-                            "Sua principal função é desenrolar essas bobinas de maneira controlada e constante, tornando mais eficiente e seguro o processo de produção. Com uma estrutura robusta e ajustável, o desbobinador pode lidar com diferentes tamanhos e tipos de bobinas, garantindo a continuidade da produção sem interrupções indesejadas. </p>"+
-                        "</div>"+
-                      "</div>";
-                      element2.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='/Fotos Pratica Final/Fotos Pratica Final/desbobinador-carretel/32.jpg'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Um dos maiores benefícios do desbobinador de carretel é sua versatilidade. Ele é amplamente utilizado em diversos setores da indústria, desde a fabricação de embalagens até a produção de fios e cabos elétricos.  </p>"+
-                        "</div>"+
-                      "</div>";
-                      element3.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='/Fotos Pratica Final/Fotos Pratica Final/desbobinador-carretel/33.jpg'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "A capacidade de ajustar a velocidade de desenrolamento e a tensão do material torna-o adequado para uma ampla gama de aplicações.</p>"+
-                        "</div>"+
-                      "</div>"
-    }
-    if(target==3){
+  }
+  if (target == 1 || target == 8 || target == 11 || target == 17 || target == 23 || target == 25 || target == 31 || target == 40) {
+    //Imagem forma
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./Fotos Pratica Final/Fotos Pratica Final/imagem-forma/8.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Forma</h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>";
+    element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>";
+    element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>"
+
+  }
+
+  if (target == 33 || target == 32 || target == 24) {
+    //Desbobinador de carretel
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./Fotos Pratica Final/Fotos Pratica Final/desbobinador-carretel/24.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Forma</h1>" +
+      "<p id='pDoCard'>" +
+      "Sua principal função é desenrolar essas bobinas de maneira controlada e constante, tornando mais eficiente e seguro o processo de produção.</p>" +
+      "</div>" +
+      "</div>";
+    element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./Fotos Pratica Final/Fotos Pratica Final/desbobinador-carretel/32.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Um dos maiores benefícios do desbobinador de carretel é sua versatilidade. Sendo usado na produção de fios e cabos elétricos.</p>" +
+      "</div>" +
+      "</div>";
+    element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./Fotos Pratica Final/Fotos Pratica Final/desbobinador-carretel/33.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "A capacidade de ajustar a velocidade de desenrolamento e a tensão do material torna-o adequado para uma ampla gama de aplicações.</p>" +
+      "</div>" +
+      "</div>"
+  }
+  if (target == 3) {
     element.innerHTML = "<div class='card1'>Este é meu texto 4 HTML</div>";
-    }
-    // Henrique
-    if(target==9 || target==10 || target==16 || target==27 || target==28 || target==29 || target==30){
-    element.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src=''>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>'Tensionador de Fio'</h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>";
-    }
+  }
+  
+  // Henrique
+  if (target == 9 || target == 10 || target == 16 || target == 27 || target == 28 || target == 29 || target == 30) {
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src=''>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>'Tensionador de Fio'</h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>";
+    element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src=''>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>'Tensionador de Fio'</h1>" +
+      "<p id='pDoCard'>" +
+      " </p>" +
+      "</div>" +
+      "</div>";
+    element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src=''>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>'Tensionador de Fio'</h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>";
+  }
 
-    if(target ==41 || target == 43){
-      element1.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>'Sistema Pneumático'</h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>"
-    }
-    if(target == 14){
-      element1.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>'CLP'</h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>"
-    }
-    if(target == 26 || target ==20 || target ==18 || target ==21 || target ==19 || target ==22 || target ==13){
-      element1.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>";
-                      element2.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>";
-                      element3.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>"
-    }
-
-    
-
-
-    ///maquina tudo
-    if(target ==0 || target == 37 || target == 38 || target == 39 ){
-      element1.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='Fotos Pratica Final/Fotos Pratica Final/maquina-tudo/0.jpg'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "A bobinadeira funciona enrolando fios em um carretel.Temos um eixo que será responsável por guiar o fio, este eixo é chamado de carrier axis. O outro eixo somente irá girar para enrolar o fio, chamado de spool axis.</p>"+
-                        "</div>"+
-                      "</div>";
-                      element2.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='Fotos Pratica Final/Fotos Pratica Final/maquina-tudo/37.jpg'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>";
-                      element3.innerHTML ="<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>"+
-                        "<img id='imagemCard' src='Fotos Pratica Final/Fotos Pratica Final/maquina-tudo/39.jpg'>"+
-                        "<div id='divLadoDoCard'>"+
-                          "<h1>Bobinadeira eletrica </h1>"+
-                          "<p id='pDoCard'>"+
-                            "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>"+
-                        "</div>"+
-                      "</div>"
-    }
-    ///maquina tudo
-    
-    ///iniciação-sistema
-    if(target ==15){
-      
-    }
-    ///iniciação-sistema
+  if (target == 41 || target == 43) {
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>'Sistema Pneumático'</h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>"
+    element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='/Fotos Pratica Final/Fotos Pratica Final/desbobinador-carretel/32.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Sistema Pneumático</h1>" +
+      "<p id='pDoCard'>" +
+      "Um dos maiores benefícios do desbobinador de carretel é sua versatilidade. Sendo usado na produção de fios e cabos elétricos.</p>" +
+      "</div>" +
+      "</div>";
+      element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src=''>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>'Tensionador de Fio'</h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>";
+  }
+  if (target == 14) {
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>'CLP'</h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>"
+      element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='/Fotos Pratica Final/Fotos Pratica Final/desbobinador-carretel/32.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Um dos maiores benefícios do desbobinador de carretel é sua versatilidade. Sendo usado na produção de fios e cabos elétricos.</p>" +
+      "</div>" +
+      "</div>";
+      element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src=''>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>'Tensionador de Fio'</h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>";
+  }
+  if (target == 26 || target == 20 || target == 18 || target == 21 || target == 19 || target == 22 || target == 13) {
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>";
+    element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>";
+    element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Essa parte da Bobinadeira eletrica eh muito importante para seu funcinamento, ela eh bem legal mesmo </p>" +
+      "</div>" +
+      "</div>"
+  }
 
 
 
-    function voltaPraPaginaInicial(){
-        window.location.href = "/index.html" 
-    }
-    </script>
+
+  ///maquina tudo
+  if (target == 0 || target == 37 || target == 38 || target == 39) {
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./Fotos Pratica Final/Fotos Pratica Final/maquina-tudo/0.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "A bobinadeira funciona enrolando fios em um carretel.</p>" +
+      "</div>" +
+      "</div>";
+    element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./Fotos Pratica Final/Fotos Pratica Final/maquina-tudo/37.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "Temos um eixo que será responsável por guiar o fio, este eixo é chamado de carrier axis</p>" +
+      "</div>" +
+      "</div>";
+    element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./Fotos Pratica Final/Fotos Pratica Final/maquina-tudo/39.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "O outro eixo somente irá girar para enrolar o fio, chamado de spool axis.</p>" +
+      "</div>" +
+      "</div>"
+  }
+  ///maquina tudo
+
+  ///iniciação-sistema
+  if (target == 15) {
+    element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./Fotos Pratica Final/Fotos Pratica Final/maquina-tudo/0.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Bobinadeira eletrica </h1>" +
+      "<p id='pDoCard'>" +
+      "A bobinadeira funciona enrolando fios em um carretel.</p>" +
+      "</div>" +
+      "</div>";
+
+  }
+  ///iniciação-sistema
+
+
+
+  function voltaPraPaginaInicial() {
+    window.location.href = "/index.html"
+  }
+</script>
