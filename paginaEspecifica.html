@@ -38,7 +38,7 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
-<body style="height: 100vh; width: 100vw;  background-color: rgb(175, 175, 175);">
+<body style="height: 100vh; width: 100vw;  background-color: #448DCA">
   <header style="width: screen;
             height: 10%;
             background-color: #448DCA;
@@ -49,13 +49,13 @@
             flex-direction: row-reverse;
             justify-content: space-between;">
     <div style="display: flex; align-items: center; justify-content: center;" onclick="voltaPraPaginaInicial()">
-      <img src="camera 1.svg" style="height:80%; width: 80%;">
+      <img src="camera 1.svg" style="height:80%; width: 80%; filter: invert(1);">
     </div>
     <div style="display: flex; align-items: center; justify-content: center;">
       <img src="image 1.svg" style="height:80%; width: 80%; ">
     </div>
   </header>
-  <main style="display: flex; justify-content: center; align-items: center; height: 90%;">
+  <main style="display: flex; justify-content: center; align-items: center; height: 100%;">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner tamanhoDoCard">
         <div class="carousel-item active tamanhoDoCard">
@@ -98,7 +98,6 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 </body>
-<img src="./Fotos Pratica Final/Fotos Pratica Final/">
 
 </html>
 
@@ -108,7 +107,7 @@
   var element2 = document.getElementById("card2")
   var element3 = document.getElementById("card3")
   const target = localStorage.getItem("target")
-  alert(target);
+
 
   if (target == 0 || target == 39 || target) {
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
@@ -157,7 +156,7 @@
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
       "<img id='imagemCard' src='./FotosPraticaFinal/desbobinadorCarretel/24.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>Forma</h1>" +
+      "<h1>Desbobinador de carretel</h1>" +
       "<p id='pDoCard'>" +
       "Sua principal função é desenrolar essas bobinas de maneira controlada e constante, tornando mais eficiente e seguro o processo de produção.</p>" +
       "</div>" +
@@ -165,7 +164,7 @@
     element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
       "<img id='imagemCard' src='./FotosPraticaFinal/desbobinadorCarretel/32.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>Bobinadeira eletrica </h1>" +
+      "<h1>Desbobinador de carretel</h1>" +
       "<p id='pDoCard'>" +
       "Um dos maiores benefícios do desbobinador de carretel é sua versatilidade. Sendo usado na produção de fios e cabos elétricos.</p>" +
       "</div>" +
@@ -186,25 +185,25 @@
   // Henrique tensionador de fio
   if (target == 9 || target == 10 || target == 16 || target == 27 || target == 28 || target == 29 || target == 30) {
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src=''>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/tensionadorFio/16.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>'Tensionador de Fio'</h1>" +
+      "<h1>Tensionador de Fio</h1>" +
       "<p id='pDoCard'>" +
       "O tensionador de fio serve par deixar o sempre esticado e para que não embole dentro da forma </p>" +
       "</div>" +
       "</div>";
     element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='/Fotos Pratica Final/tensionador-fio/16.jpg'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/tensionadorFio/27.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>'Tensionador de Fio'</h1>" +
+      "<h1>Tensionador de Fio</h1>" +
       "<p id='pDoCard'>" +
       "Se a tensão for muito alta, o fio pode quebrar ou se soltar da bobina. Se a tensão for muito baixa, o fio pode ficar frouxo e desalinhado.</p>" +
       "</div>" +
       "</div>";
     element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src=''>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/tensionadorFio/16.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>'Tensionador de Fio'</h1>" +
+      "<h1>Tensionador de Fio</h1>" +
       "<p id='pDoCard'>" +
       "Se o fio estiver enrolado uniformemente, o produto será mais resistente e durável.</p>" +
       "</div>" +
@@ -213,34 +212,34 @@
   //henrique 
   if (target == 36) {
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='/FotosPraticaFinal/tensionadorFio/16.jpg'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/renicializaçãoDeFalahas/36.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>'Tensionador de Fio'</h1>" +
+      "<h1>Reinicialização de Falhas</h1>" +
       "<p id='pDoCard'>" +
-      "O tensionador de fio serve par deixar o sempre esticado e para que não embole dentro da forma </p>" +
+      "Este sistema é utilizado para caso aconteca uma falha o operador saberá quando reniciar a máquina </p>" +
       "</div>" +
       "</div>";
     element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='/FotosPraticaFinal/tensionadorFio/27.jpg'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/renicializaçãoDeFalahas/36.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>'Tensionador de Fio'</h1>" +
+      "<h1>Reinicialização de Falhas</h1>" +
       "<p id='pDoCard'>" +
-      "Se a tensão for muito alta, o fio pode quebrar ou se soltar da bobina. Se a tensão for muito baixa, o fio pode ficar frouxo e desalinhado.</p>" +
+      "Um sistema de reinicialização de falhas pode ajudar a reduzir o tempo de inatividade da bobinadeira. </p>" +
       "</div>" +
       "</div>";
     element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='/FotosPraticaFinal/tensionadorFio/16.jpg'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/renicializaçãoDeFalahas/36.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>'Tensionador de Fio'</h1>" +
+      "<h1>Reinicialização de Falhas</h1>" +
       "<p id='pDoCard'>" +
-      "Se o fio estiver enrolado uniformemente, o produto será mais resistente e durável.</p>" +
+      "Um sistema de reinicialização de falhas pode ajudar a evitar que a máquina entre em um estado instável ou inutilizável. </p>" +
       "</div>" +
       "</div>";
   }
   //Sistema Pneumático
   if (target == 41 || target == 43) {
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/sistemaPneumatico/41.jpg'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>'Sistema Pneumático'</h1>" +
       "<p id='pDoCard'>" +
@@ -248,7 +247,7 @@
       "</div>" +
       "</div>"
     element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='/Fotos Pratica Final/desbobinador-carretel/32.jpg'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/sistemaPneumatico/43.jpg'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>Sistema Pneumático</h1>" +
       "<p id='pDoCard'>" +
@@ -256,7 +255,7 @@
       "</div>" +
       "</div>";
       element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src=''>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/sistemaPneumatico/41.jpg'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>'Sistema Pneumático'</h1>" +
       "<p id='pDoCard'>" +
@@ -267,7 +266,7 @@
   //CLP
   if (target == 14) {
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/clp/14.jpg'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>'CLP'</h1>" +
       "<p id='pDoCard'>" +
@@ -276,7 +275,7 @@
       "</div>" +
       "</div>"
       element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='/Fotos Pratica Final/desbobinador-carretel/32.jpg'>" +
+      "<img id='imagemCard' src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.weg.net%2Fcatalog%2Fweg%2FBR%2Fpt%2FAutoma%25C3%25A7%25C3%25A3o-e-Controle-Industrial%2FControle-de-Processos%2FControladores-L%25C3%25B3gicos-Program%25C3%25A1veis%2FControlador-L%25C3%25B3gico-Program%25C3%25A1vel-PLC300%2FControlador-L%25C3%25B3gico-Program%25C3%25A1vel-PLC300%2Fp%2FMKT_WDC_BRAZIL_PROGRAMMABLE_LOGIC_CONTROLLER_PLC_PLC300&psig=AOvVaw2jNDpkKhWTQwZKwxad3ZwJ&ust=1696718391604000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjSiNy-4oEDFQAAAAAdAAAAABAD'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>'CLP'</h1>" +
       "<p id='pDoCard'>" +
@@ -285,7 +284,7 @@
       "</div>" +
       "</div>";
       element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src=''>" +
+      "<img id='imagemCard' src='https://www.google.com/url?sa=i&url=https%3A%2F%2Frehangarden.com%2Fweg-plc300-controlador-l%25C3%25B3gico-program%25C3%25A1vel-ii-WlqdQNf1&psig=AOvVaw2jNDpkKhWTQwZKwxad3ZwJ&ust=1696718391604000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjSiNy-4oEDFQAAAAAdAAAAABAJ'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>'CLP'</h1>" +
       "<p id='pDoCard'>" +
@@ -296,7 +295,7 @@
   //Fio de Cobre
   if (target == 26 || target == 20 || target == 18 || target == 21 || target == 19 || target == 22 || target == 13) {
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/fioCobre/13.jpg'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>Fio de Cobre</h1>" +
       "<p id='pDoCard'>" +
@@ -306,7 +305,7 @@
       "</div>" +
       "</div>";
     element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/fioCobre/13.jpg'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>Fio de Cobre</h1>" +
       "<p id='pDoCard'>" +
@@ -315,7 +314,7 @@
       "</div>" +
       "</div>";
     element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
-      "<img id='imagemCard' src='be53fc5350400539c44b3bc7c2552fe9.gif'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/fioCobre/22.jpg'>" +
       "<div id='divLadoDoCard'>" +
       "<h1>Fio de Cobre</h1>" +
       "<p id='pDoCard'>" +
@@ -332,7 +331,7 @@
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
       "<img id='imagemCard' src='./FotosPraticaFinal/maquinaTudo/0.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>Bobinadeira eletrica </h1>" +
+      "<h1>Bobinadeira Eletrica </h1>" +
       "<p id='pDoCard'>" +
       "A bobinadeira funciona enrolando fios em um carretel.</p>" +
       "</div>" +
@@ -340,7 +339,7 @@
     element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
       "<img id='imagemCard' src='./FotosPraticaFinal/maquinaTudo/37.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>Bobinadeira eletrica </h1>" +
+      "<h1>Bobinadeira Eletrica </h1>" +
       "<p id='pDoCard'>" +
       "Temos um eixo que será responsável por guiar o fio, este eixo é chamado de carrier axis</p>" +
       "</div>" +
@@ -348,7 +347,7 @@
     element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
       "<img id='imagemCard' src='./FotosPraticaFinal/maquinaTudo/39.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>Bobinadeira eletrica </h1>" +
+      "<h1>Bobinadeira Eletrica </h1>" +
       "<p id='pDoCard'>" +
       "O outro eixo somente irá girar para enrolar o fio, chamado de spool axis.</p>" +
       "</div>" +
@@ -361,9 +360,25 @@
     element1.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
       "<img id='imagemCard' src='./FotosPraticaFinal/maquinaTudo/15.jpg'>" +
       "<div id='divLadoDoCard'>" +
-      "<h1>Bobinadeira eletrica </h1>" +
+      "<h1>Iniciação do Sistema</h1>" +
       "<p id='pDoCard'>" +
-      "A bobinadeira funciona enrolando fios em um carretel.</p>" +
+      "O botão verde inicia o cilco de bobinagem</p>" +
+      "</div>" +
+      "</div>";
+      element2.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/maquinaTudo/15.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Iniciação do Sistema</h1>" +
+      "<p id='pDoCard'>" +
+      "O botão preto serve para retirar a bobina e posicionar servo.</p>" +
+      "</div>" +
+      "</div>";
+      element3.innerHTML = "<div id='tamanhoDoCard' style='display:flex; flex-wrap: wrap;flex-direction: row; align-items: center;'>" +
+      "<img id='imagemCard' src='./FotosPraticaFinal/maquinaTudo/15.jpg'>" +
+      "<div id='divLadoDoCard'>" +
+      "<h1>Iniciação do Sistema</h1>" +
+      "<p id='pDoCard'>" +
+      "O botão vermelho de emergencia para de emetiado a maquina.</p>" +
       "</div>" +
       "</div>";
 
